@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void modify(int arr[], int size) {
+    for (int i = 0; i < size; i++) {
+        arr[i] *= 3;
+    }
+}
+
+int main() {
+    int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    modify(arr, 10);
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
